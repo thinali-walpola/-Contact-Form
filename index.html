@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" novalidate>
+      <div class="form-row">
+        <label for="firstName">First Name <span>*</span></label>
+        <input type="text" id="firstName" name="firstName" required />
+        <small></small>
+      </div>
+      <div class="form-row">
+        <label for="lastName">Last Name <span>*</span></label>
+        <input type="text" id="lastName" name="lastName" required />
+        <small></small>
+      </div>
+      <div class="form-row full">
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" id="email" name="email" required />
+        <small></small>
+      </div>
+      <div class="form-row full">
+        <label>Query Type <span>*</span></label>
+        <div class="query-options">
+          <label><input type="radio" name="queryType" value="General Enquiry" /> General Enquiry</label>
+          <label><input type="radio" name="queryType" value="Support Request" /> Support Request</label>
+        </div>
+        <small></small>
+      </div>
+      <div class="form-row full">
+        <label for="message">Message <span>*</span></label>
+        <textarea id="message" name="message" required></textarea>
+        <small></small>
+      </div>
+      <div class="form-row full checkbox">
+        <label><input type="checkbox" id="consent" name="consent" required /> I consent to being contacted by the team <span>*</span></label>
+        <small></small>
+      </div>
+      <div class="form-row full">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
